@@ -1,0 +1,137 @@
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    width: 100%;
+    height: 90px;
+
+    position: fixed;
+    z-index: 1;
+    background-color: rgb(83, 12, 150);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header img {
+    width: 80px;
+    height: 80px;
+    
+    margin-left: 20px;
+    border-radius: 50%;
+}
+
+
+header nav  ul{
+    display: flex;
+}
+
+
+header nav  ul li{
+    margin: 0 20px;
+    padding: 2px;
+    font-size: 20px;
+}
+
+
+header nav  ul li a {
+    color: white;
+}
+
+
+main {
+    position: absolute;
+    top: 90px;
+   
+}
+
+main section {
+    width: 100%;
+    height: 1200px;
+    padding: 30px ;
+    background-color: teal;
+    text-align: justify
+}
+
+
+header button {
+    background-color: rgb(83, 12, 150);
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+header button i {
+    color: white;
+    font-size: 40px;
+}
+
+
+header nav ul li:hover {
+   border-top: 1px solid white;
+   border-bottom: 1px solid white;
+}
+
+
+@media (max-width: 723px){
+
+
+    header button {
+        position: absolute;
+        display: block;
+        outline: none;
+        right: 30px;
+    }
+
+    nav {
+       
+        position: absolute;
+        top: 90px;
+    }
+
+    header nav  ul{
+        width: 250px;
+        height: auto;
+        flex-direction: column;
+        background-color: rgb(83, 12, 150);
+        border-radius: 0 0 5px 5px;
+        padding: 10px 0;
+            
+    }
+
+    
+    header nav  ul li {
+        margin: 20px 10px;
+        text-align: center;
+    }
+
+    header .menu {
+        display: none;
+    }
+
+}  
+    
+
+@media (max-width: 360px) {
+   
+    nav {
+       width: 100%;
+       height: auto;
+       background-color: violet;
+    }
+
+    
+    header nav  ul{
+        width: 100%;
+        height: auto;           
+    }
+   
+}
